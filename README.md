@@ -11,5 +11,20 @@ Création d’une carte interactive (carte utilisant OpenStreetMap) avec une int
 Créer une application web dynamique en utilisant :
 
 ### Partie 1 - Le 29 et 30 avril 2024
-- **git** : Création d'un `fork`, `clone` du `fork`, `création de branches`, `commits` réguliers, travail remis via un `pull request` sur **github**
+- **git** : création d'un `fork`, `clone` du `fork`, `création de branches`, `commits` réguliers, travail remis via un `pull request` sur **github**
+- **WAMP** : création d’un hôte virtuel vers le dossier public du test
+- **PHPMyAdmin** : création d’une base de données, et importation des deux fichiers SQL fournis (`utilisateurs.sql` et `localisations.sql`)
+- **MySQL** ou **MariaDB** : exécution de requêtes SELECT, INSERT, UPDATE et DELETE. Avec requêtes préparées si nécessaires et gestion des erreurs
+- **PHP** : respect du Modèle Vue Contrôleur (`MVC`) en PHP, mise en oeuvre d’un `CRUD`, utilisation des sessions pour un accès privé à l’interface d’administration, connexion à la base de données via `PDO`
+- **HTML / CSS** : affichage de la carte et de la liste des localisations, responsive design et formulaire de connexion
+- **JS** : récupération des données et intégration dans la carte et la liste
+- **Bootstrap** : réalisation de l’interface d’administration
 
+### Partie 2 - Pour la présentation (début mai 2024)
+- **FTP** : Le travail est mis en ligne sur le serveur du stagiaire
+- **SQL** : Le travail est mis en ligne sur un serveur de base de données
+- **Présentation Publique** : Présenter son travail de manière cohérente 
+
+## Marche à suivre pour démarrer le projet
+- Créer un fork du projet `TI3-2024` sur `github.com`, puis clonez-le sur votre machine
+- Créez un hôte virtuel dans WAMP sur le dossier `/TI3-2024/public/` nommé `TI3-2024`
