@@ -26,5 +26,10 @@ Créer une application web dynamique en utilisant :
 - **Présentation Publique** : Présenter son travail de manière cohérente 
 
 ## Marche à suivre pour démarrer le projet
-- Créer un fork du projet `TI3-2024` sur `github.com`, puis clonez-le sur votre machine
+- Créez un fork du projet `TI3-2024` sur `github.com`, puis clonez-le sur votre machine
 - Créez un hôte virtuel dans WAMP sur le dossier `/TI3-2024/public/` nommé `TI3-2024`
+- Créez une base de données (en MariaDB ou MySQL) dans phpMyAdmin nommée `TI3_2024`
+- Importez les fichiers `data/utilisateurs.sql` et `localisations.sql` (donné par Pierre) dans la base de données `TI3_2024`
+- Créez un fichier `config.php` dans le dossier `/TI3-2024/` et ajoutez-y les informations de connexion à la base de données dans des `constantes` PHP (Il se trouve déjà dans le `.gitignore` pour ne pas être commité)
+- Dupliquez ensuite ce fichier en `config.php.ini` que l'on puisse installer votre site sur notre ordinateur pour la correction
+ 
