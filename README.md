@@ -32,4 +32,11 @@ Créer une application web dynamique en utilisant :
 - Importez les fichiers `data/utilisateurs.sql` et `localisations.sql` (donné par Pierre) dans la base de données `TI3_2024`
 - Créez un fichier `config.php` dans le dossier `/TI3-2024/` et ajoutez-y les informations de connexion à la base de données dans des `constantes` PHP (Il se trouve déjà dans le `.gitignore` pour ne pas être commité)
 - Dupliquez ensuite ce fichier en `config.php.ini` que l'on puisse installer votre site sur notre ordinateur pour la correction
+
+  ## Accès à l'administration
+
+  - Login : admin
+  - Password : admin123
+ 
+  # Bon travail !
  
