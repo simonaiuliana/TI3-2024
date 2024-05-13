@@ -12,3 +12,5 @@ CREATE TABLE IF NOT EXISTS `utilisateurs` (
 
 INSERT INTO `utilisateurs` (`idutilisateurs`, `username`, `passwd`) VALUES
     (1, 'admin', '$2y$10$2sn4jJ0LgUkGCQHNDfsEPOlybZlC20j.Lk3JCM7lfyAwwrizsEaem');
+
+
