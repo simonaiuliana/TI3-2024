@@ -156,7 +156,6 @@ label[for="ville"] {
 }
 
 
-
 label[for="longitude"] {
     position: relative;
     left: -9.5%;
@@ -221,6 +220,8 @@ label[for="latitude"] {
     cursor: pointer;
     margin: 0 auto;
 }
+
+
 
 
 .btnConnect:hover {
