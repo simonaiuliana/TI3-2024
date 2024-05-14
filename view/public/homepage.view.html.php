@@ -14,7 +14,7 @@
 <body class="fondGris">
     <div id="content">
         <h1 class="titreHomepage">Carte interactive</h1>
-        <h3 class="titreHomepage">Théâtres à Bruxelles</h3>
+        <h3 class="titreHomepage">Centres sportifs</h3>
 
         <div>
             <a href="?connect"> <button class="btnConnect"><i class="animation"></i>Connexion à l'administration<i class="animation"></i>
@@ -61,7 +61,7 @@
         <div id="resultat">
             <div id="map"></div>
             <div id="liste">
-                <h2 class="titreHomepage">Listes des théâtres</h2>
+                <h2 class="titreHomepage">Les centres sportifs à Bruxelles</h2>
                 <p class="titreHomepage">Cliquez sur un élément dans la liste ci-dessous pour le situer sur la carte</p>
                 <hr>
             </div>

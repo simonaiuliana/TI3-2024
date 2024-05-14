@@ -44,17 +44,16 @@ function getOneLocationById(PDO $db, int $id): string|bool|array
 // En lui passant TOUTES les variables en paramètre
 // nous renvoie false en cas d'échec ou le message d'erreur sql
 // ou un true en cas de succès
-function updateOneLocationById(PDO $db, int $id, string $nom, string $adresse, string $codePostal ,string $telephone ,string $url,float $latitude, float $longitude): string|bool
+function updateOneLocationById(PDO $db, int $id, string $nom, string $adresse, string $codePostal, string $ville, float $latitude, float $longitude): string|bool
 {
-    $sql = "UPDATE `localisations` SET `nom`= ? , `rue`= ?,`codepostal` = ?,`telephone` = ? ,`url` = ? ,`latitude`= ?, `longitude`= ? WHERE `id`= ?";
+    $sql = "UPDATE `localisations` SET `nom`= ? , `adresse`= ?,`codepostal` = ?,`ville` = ?,`latitude`= ?, `longitude`= ? WHERE `id`= ?";
     $stmt = $db->prepare($sql);
     try {
         $stmt->execute([
             $nom,
             $adresse,
             $codePostal,
-            $telephone,
-            $url,
+            $ville,
             $latitude,
             $longitude,
             $id
@@ -70,17 +69,16 @@ function updateOneLocationById(PDO $db, int $id, string $nom, string $adresse, s
 
 //Fonction qui insére un nouveau lieu
 
-function insertOneLocation(PDO $db, string $nom, string $adresse,string $codePostal,string $telephone,string $url,float $latitude, float $longitude): bool|string
+function insertOneLocation(PDO $db, string $nom, string $adresse,string $codePostal,string $ville,float $latitude, float $longitude): bool|string
 {
-    $sql = "INSERT INTO `localisations` (`nom`,`rue`,`codepostal`,`telephone`,`url`,`latitude`,`longitude`) VALUES (?,?,?,?,?,?,?);";
+    $sql = "INSERT INTO `localisations` (`nom`,`adresse`,`codepostal`,`ville`,latitude`,`longitude`) VALUES (?,?,?,?,?,?,?);";
     $prepare = $db->prepare($sql);
     try {
         $prepare->execute([
             $nom,
             $adresse,
             $codePostal,
-            $telephone,
-            $url,
+            $ville,
             $latitude,
             $longitude
         ]);

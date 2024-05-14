@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 .fondGris {
-    background-color: #f0f0f0;
+    background-color: #f6dcb8;
 }
 
 .titreHomepage {
@@ -21,9 +21,9 @@ a {
     align-items: center;
     padding: 10px;
     cursor: pointer;
-    background-color: #C0D6DF;
+    background-color: #eedd7d;
     color: black;
-    border: 2px solid #2a454e;
+    border: 2px solid #3c3104;
     border-radius: 10px;
     margin: 20px auto;
     width: 10vw;
@@ -65,7 +65,7 @@ a {
 }
 
 #btnConnexion {
-    background-color: #02dbc1;
+    background-color: #dbb302;
     color: black;
 }
 
@@ -75,7 +75,7 @@ a {
 }
 
 #loginForm {
-    background-color: #2a454e;
+    background-color: #6393a3;
 }
 
 @media screen and (max-width:640px) {
@@ -124,7 +124,7 @@ li {
 }
 
 .th-inner {
-    background-color: #49b6a6b9 !important;
+    background-color: #f8db64b9 !important;
     color: black;
 }
 
@@ -140,7 +140,7 @@ label[for="nom"] {
     right: 11%;
 }
 
-label[for="rue"] {
+label[for="adresse"] {
     position: relative;
     right: 10%;
 }
@@ -150,15 +150,12 @@ label[for="codepostal"] {
     right: 9%;
 }
 
-label[for="telephone"] {
+label[for="ville"] {
     position: relative;
     right: 9%;
 }
 
-label[for="url"] {
-    position: relative;
-    right: 11.5%;
-}
+
 
 label[for="longitude"] {
     position: relative;
@@ -171,7 +168,7 @@ label[for="latitude"] {
 }
 
 @media screen and (max-width:1400px) {
-    label[for="rue"] {
+    label[for="adresse"] {
         position: relative;
         right: 9%;
     }
@@ -181,7 +178,7 @@ label[for="latitude"] {
         right: 8%;
     }
 
-    label[for="telephone"] {
+    label[for="ville"] {
         position: relative;
         right: 8%;
     }
@@ -198,7 +195,7 @@ label[for="latitude"] {
 }
 
 #nbLieu {
-    color: #2a454e !important;
+    color: #433708 !important;
     font-weight: bold;
 }
 
@@ -208,11 +205,11 @@ label[for="latitude"] {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #40B3A2;
+    background: #f4e753;
     min-width: 200px;
     border: 0;
     border-radius: 4px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+    box-shadow: 0 4px 12px rgba(74, 54, 4, 0.1);
     box-sizing: border-box;
     padding: 16px 20px;
     color: #fff;

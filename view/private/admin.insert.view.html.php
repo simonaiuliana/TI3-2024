@@ -46,7 +46,7 @@
           </div>
           <div class="mb-3 ">
 
-            <input type="text" name="rue" class="form-control w-25 mx-auto shadow-lg" id="rue" placeholder="Adresse" required></input>
+            <input type="text" name="adresse" class="form-control w-25 mx-auto shadow-lg" id="adresse" placeholder="Adresse" required></input>
           </div>
           <div class="mb-3 ">
 
@@ -54,13 +54,10 @@
           </div>
           <div class="mb-3 ">
 
-            <input type="number" name="telephone" class="form-control w-25 mx-auto shadow-lg" id="telephone" placeholder="Numéro téléphone" required></input>
+            <input type="text" name="ville" class="form-control w-25 mx-auto shadow-lg" id="ville" placeholder="Ville" required></input>
           </div>
           <div class="mb-3 ">
 
-            <input type="text" name="url" class="form-control w-25 mx-auto shadow-lg" id="url" placeholder="URL vers le site" required></input>
-          </div>
-          <div class="mb-3">
 
             <input type="number" placeholder="latitude" name="latitude" step="0.000000001" class="form-control w-25 mx-auto shadow-lg" id="latitude" required>
           </div>

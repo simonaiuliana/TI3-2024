@@ -15,18 +15,16 @@ if (isset($_GET['create'])) {
     //Si on a cliqué sur insérer
     if (isset(
         $_POST['nom'],
-        $_POST['rue'],
+        $_POST['adresse'],
         $_POST['codepostal'],
-        $_POST['telephone'],
-        $_POST['url'],
+        $_POST['ville'],
         $_POST['latitude'],
         $_POST['longitude']
     )) {
         $title = htmlspecialchars(strip_tags(trim($_POST['nom'])), ENT_QUOTES);
-        $adresse = htmlspecialchars(trim($_POST['rue']), ENT_QUOTES);
+        $adresse = htmlspecialchars(trim($_POST['adresse']), ENT_QUOTES);
         $codePostal = htmlspecialchars(trim($_POST['codepostal']), ENT_QUOTES);
-        $telephone = htmlspecialchars(trim($_POST['telephone']), ENT_QUOTES);
-        $url = htmlspecialchars(trim($_POST['url']), ENT_QUOTES);
+        $ville = htmlspecialchars(trim($_POST['ville']), ENT_QUOTES);
         $latitude = (float) $_POST['latitude'];
         $longitude = (float) $_POST['longitude'];
 
@@ -79,20 +77,18 @@ if (isset($_GET['update']) && ctype_digit($_GET['update'])) {
     //Si on a modifier le formulaire (pas obligatoire de vérifier tous les champs, mais dans le isset, la virgule vaut &&)
     if (isset(
         $_POST['nom'],
-        $_POST['rue'],
+        $_POST['adresse'],
         $_POST['codepostal'],
-        $_POST['telephone'],
-        $_POST['url'],
+        $_POST['ville'],
         $_POST['latitude'],
         $_POST['longitude']
     )) {
         // vérification de valeurs
         $id = $idUpdate;
-        $title = htmlspecialchars(strip_tags(trim($_POST['nom'])), ENT_QUOTES);
-        $adresse = htmlspecialchars(trim($_POST['rue']), ENT_QUOTES);
+        $nom = htmlspecialchars(strip_tags(trim($_POST['nom'])), ENT_QUOTES);
+        $adresse = htmlspecialchars(trim($_POST['adresse']), ENT_QUOTES);
         $codePostal = htmlspecialchars(trim($_POST['codepostal']), ENT_QUOTES);
-        $telephone = htmlspecialchars(trim($_POST['telephone']), ENT_QUOTES);
-        $url = htmlspecialchars(trim($_POST['url']), ENT_QUOTES);
+        $ville = htmlspecialchars(trim($_POST['ville']), ENT_QUOTES);
         $latitude = (float) $_POST['latitude'];
         $longitude = (float) $_POST['longitude'];
 

@@ -32,8 +32,8 @@ function afficheMarqueurs(liste) {
         let unMarqueur = L.marker([liste[item].latitude, liste[item].longitude]).addTo(map);
 
         //Ajout du nom de l'item dans un popup
-        unMarqueur.bindPopup(`<h3>${liste[item].nom}</h3> <p>${liste[item].rue}</p> <p>${liste[item].codepostal + " Bruxelles"}</p>
-        <p>${liste[item].telephone}</p> <a target='_blank' href='${liste[item].url}'>${liste[item].url}</a>`);
+        unMarqueur.bindPopup(`<h3>${liste[item].nom}</h3> <p>${liste[item].adresse}</p> <p>${liste[item].codepostal + " Bruxelles"}</p>
+        <p>${liste[item].ville}</p>`);
 
         //Ajout de ce marqueur au tableau
         markerTable.push(unMarqueur);
@@ -55,7 +55,7 @@ function afficheListe(liste) {
         //Créer l'élément de type li
         let li = document.createElement("li");
         //remplir le li
-        li.innerHTML = "Lieu :" + `${item.nom} | Adresse : ${item.rue} ${item.codepostal} Bruxelles <br> Tél : ${item.telephone} | Site web: <a href="${item.url}" target="_blank" style="color:#4ab7a7; font-weight:bold;">${item.url}</a>`;
+        li.innerHTML = "Lieu :" + `${item.nom} | Adresse : ${item.adresse} ${item.codepostal} Bruxelles `;
         //Ajoute un eventListener sur l'event clic
         li.addEventListener('click', itemClick);
         //ajouter un attribut à cet item li pour l'identifier

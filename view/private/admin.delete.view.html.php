@@ -56,10 +56,9 @@
         else :
         ?>
             <h5 class="text-center mt-5 mb-3">Nom : <span class="fw-normal"> <?= $getOneLocation['nom'] ?></span></h5>
-            <h5 class="text-center mb-3">Adresse : <span class="fw-normal"><?= $getOneLocation['rue'] ?></span></h5>
+            <h5 class="text-center mb-3">Adresse : <span class="fw-normal"><?= $getOneLocation['adresse'] ?></span></h5>
             <h5 class="text-center mb-3">Code Postal : <span class="fw-normal"><?= $getOneLocation['codepostal'] ?></span></h5>
-            <h5 class="text-center mb-3">Téléphone : <span class="fw-normal"><?= $getOneLocation['telephone'] ?></span></h5>
-            <h5 class="text-center mb-3">Url : <span class="fw-normal"><?= $getOneLocation['url'] ?></span></h5>
+            <h5 class="text-center mb-3">Ville : <span class="fw-normal"><?= $getOneLocation['ville'] ?></span></h5>
             <h5 class="text-center mb-3">Latitude : <span class="fw-normal"><?= $getOneLocation['latitude'] ?></span></h5>
             <h5 class="text-center mb-3">Longitude : <span class="fw-normal"><?= $getOneLocation['longitude'] ?></span></h5>
             <p class="text-center mt-4 mb-4 fw-bold">Voulez-vous vraiment supprimer ce lieu ?</p>

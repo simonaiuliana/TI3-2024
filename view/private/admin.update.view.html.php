@@ -64,20 +64,16 @@
                             <input type="text" name="nom" value="<?= $getOneLocation['nom'] ?>" class="form-control mx-auto w-25 shadow-lg" id="nom" required>
                         </div>
                         <div class="mb-3">
-                            <label for="rue" class="form-label">Adresse</label>
-                            <input type="text" name="rue" class="form-control mx-auto w-25 shadow-lg" id="rue" value="<?= $getOneLocation['rue'] ?>" required>
+                            <label for="adresse" class="form-label">Adresse</label>
+                            <input type="text" name="adresse" class="form-control mx-auto w-25 shadow-lg" id="adresse" value="<?= $getOneLocation['adresse'] ?>" required>
                         </div>
                         <div class="mb-3">
                             <label for="codepostal" class="form-label">Code Postal</label>
                             <input type="text" name="codepostal" class="form-control mx-auto w-25 shadow-lg" id="codepostal" value="<?= $getOneLocation['codepostal'] ?>" required>
                         </div>
                         <div class="mb-3">
-                            <label for="telephone" class="form-label">Numéro Tel</label>
-                            <input type="text" name="telephone" class="form-control mx-auto w-25 shadow-lg" id="telephone" value="<?= $getOneLocation['telephone'] ?>" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="url" class="form-label">Url</label>
-                            <input type="text" name="url" class="form-control mx-auto w-25 shadow-lg" id="url" value="<?= $getOneLocation['url'] ?>" required>
+                            <label for="ville" class="form-label">Numéro Tel</label>
+                            <input type="text" name="ville" class="form-control mx-auto w-25 shadow-lg" id="ville" value="<?= $getOneLocation['telephone'] ?>" required>
                         </div>
                         <div class="mb-3">
                             <label for="latitude" class="form-label">Latitude</label>

@@ -25,7 +25,7 @@
     </div>
 
     <?php
-        include("../view/incShared/footer.php");
+        include("..footer.php");
     ?>
     
   
