@@ -35,3 +35,4 @@ $datas = getAllLocations($db);
 
 //appel de la vue
 include "../view/public/homepage.view.html.php";
+include "../view/public/footer.php";

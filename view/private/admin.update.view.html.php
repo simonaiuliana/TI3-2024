@@ -72,8 +72,8 @@
                             <input type="text" name="codepostal" class="form-control mx-auto w-25 shadow-lg" id="codepostal" value="<?= $getOneLocation['codepostal'] ?>" required>
                         </div>
                         <div class="mb-3">
-                            <label for="ville" class="form-label">Numéro Tel</label>
-                            <input type="text" name="ville" class="form-control mx-auto w-25 shadow-lg" id="ville" value="<?= $getOneLocation['telephone'] ?>" required>
+                            <label for="ville" class="form-label">Ville</label>
+                            <input type="text" name="ville" class="form-control mx-auto w-25 shadow-lg" id="ville" value="<?= $getOneLocation['ville'] ?>" required>
                         </div>
                         <div class="mb-3">
                             <label for="latitude" class="form-label">Latitude</label>

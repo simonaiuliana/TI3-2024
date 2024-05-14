@@ -71,7 +71,7 @@ function updateOneLocationById(PDO $db, int $id, string $nom, string $adresse, s
 
 function insertOneLocation(PDO $db, string $nom, string $adresse,string $codePostal,string $ville,float $latitude, float $longitude): bool|string
 {
-    $sql = "INSERT INTO `localisations` (`nom`,`adresse`,`codepostal`,`ville`,latitude`,`longitude`) VALUES (?,?,?,?,?,?,?);";
+    $sql = "INSERT INTO `localisations` (`nom`,`adresse`,`codepostal`,`ville`,`latitude`,`longitude`) VALUES (?,?,?,?,?,?);";
     $prepare = $db->prepare($sql);
     try {
         $prepare->execute([

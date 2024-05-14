@@ -23,7 +23,7 @@
         <div class="container col-xl-10 col-xxl-8 px-4 ">
             <div class="row align-items-center g-lg-5 py-5">
                 <div class="col-lg-7 text-center text-lg-start">
-                    <img src="img/forgotPasswordremovebg.png" alt="">
+                    <img src="img/connection-and-separation.jpg" alt="" width="600px">
                 </div>
                 <div class="col-md-10 mx-auto col-lg-5">
                     <form method="POST" name="connexion" action="" class="p-4 p-md-5 border rounded-3" id="loginForm">

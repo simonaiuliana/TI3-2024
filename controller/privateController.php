@@ -13,14 +13,14 @@ if (isset($_GET['disconnect'])) {
 if (isset($_GET['create'])) {
 
     //Si on a cliqué sur insérer
-    if (isset(
-        $_POST['nom'],
-        $_POST['adresse'],
-        $_POST['codepostal'],
-        $_POST['ville'],
-        $_POST['latitude'],
-        $_POST['longitude']
-    )) {
+    if (
+        isset($_POST['nom']) &&
+        isset($_POST['adresse']) &&
+        isset($_POST['codepostal']) &&
+        isset($_POST['ville']) &&
+        isset($_POST['latitude']) &&
+        isset($_POST['longitude'])
+    ) {
         $title = htmlspecialchars(strip_tags(trim($_POST['nom'])), ENT_QUOTES);
         $adresse = htmlspecialchars(trim($_POST['adresse']), ENT_QUOTES);
         $codePostal = htmlspecialchars(trim($_POST['codepostal']), ENT_QUOTES);
@@ -28,12 +28,13 @@ if (isset($_GET['create'])) {
         $latitude = (float) $_POST['latitude'];
         $longitude = (float) $_POST['longitude'];
 
-        $insert = insertOneLocation($db, $title, $adresse,$codePostal,$telephone,$url,$latitude, $longitude);
+        $insert = insertOneLocation($db, $title, $adresse, $codePostal, $ville, $latitude, $longitude);
 
         if ($insert === true) {
             header("Location: ./");
             exit();
         }
+        else { echo $insert; }
     }
 
     //chargement de la vue
@@ -75,14 +76,14 @@ if (isset($_GET['update']) && ctype_digit($_GET['update'])) {
     $idUpdate = (int) $_GET['update'];
 
     //Si on a modifier le formulaire (pas obligatoire de vérifier tous les champs, mais dans le isset, la virgule vaut &&)
-    if (isset(
-        $_POST['nom'],
-        $_POST['adresse'],
-        $_POST['codepostal'],
-        $_POST['ville'],
-        $_POST['latitude'],
-        $_POST['longitude']
-    )) {
+    if (
+        isset($_POST['nom']) &&
+        isset($_POST['adresse']) &&
+        isset($_POST['codepostal']) &&
+        isset($_POST['ville']) &&
+        isset($_POST['latitude']) &&
+        isset($_POST['longitude'])
+    ){
         // vérification de valeurs
         $id = $idUpdate;
         $nom = htmlspecialchars(strip_tags(trim($_POST['nom'])), ENT_QUOTES);
@@ -93,7 +94,7 @@ if (isset($_GET['update']) && ctype_digit($_GET['update'])) {
         $longitude = (float) $_POST['longitude'];
 
         //fonction qui update la mise à jour
-        $update =  updateOneLocationById($db, $id, $title, $adresse, $codePostal,$telephone,$url,$latitude, $longitude);
+        $update =  updateOneLocationById($db, $id, $nom, $adresse, $codePostal,$ville,$latitude, $longitude);
         //var_dump($update);
 
         //Si l'update est bon
